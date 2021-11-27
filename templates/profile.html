@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<h2>Profile Page</h2>
+<div>
+    <p>Your account details are below:</p>
+    <table>
+        <tr>
+            <td>Username:</td>
+            <td>{{ account['username'] }}</td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>{{ account['password'] }}</td>
+        </tr>
+        <tr>
+            <td>Email   :</td>
+            <td>{{ account['email'] }}</td>
+        </tr>
+    </table>
+</div>
+
+<style>
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(0, 0, 0);
+      color: white;
+      text-align: center;
+    }
+    </style>
+    
+    <div class="footer">
+        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+            Group 10
+        </div>
+    </div>
+
+{% endblock %}
